@@ -8,7 +8,7 @@
 ✔ Css <br />
 ✔ Javascript
 
-Preview this site: <a href="https://city-bank-ltd-accounts.netlify.app/https://city-bank-ltd-accounts.netlify.app/">City-bank-ltd-accounts</a>
+Preview this site: <a href="https://shetusaurav.github.io/city-bank-ltd-accounts/">City-bank-ltd-accounts</a>
 
 User name: sg <br />
 password: 1111

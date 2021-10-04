@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/icon" href="/icon.png" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+            rel="stylesheet"
+        />
+        <title>City Bank Ltd.</title>
+    </head>
+    <body>
+        <!-- TOP NAV -->
+        <nav>
+            <p class="welcome">Log in to get started</p>
+            <img src="logo.png" alt="Logo" class="logo" />
+            <form class="login">
+                <input
+                    type="text"
+                    placeholder="User"
+                    class="login_input login_input_user"
+                />
+                <input
+                    type="password"
+                    placeholder="Password"
+                    class="login_input login_input_pin"
+                />
+                <button class="login_btn">&rarr;</button>
+            </form>
+        </nav>
+
+        <!-- MAIN FUNCTIONALITY -->
+        <main class="app">
+            <div class="balance">
+                <div>
+                    <p class="balance_label">Current balance</p>
+                    <p class="balance_date">
+                        As of
+                        <span class="date">09/09/2021, 00:11</span>
+                    </p>
+                </div>
+                <p class="balance_value">25 952,59 €</p>
+            </div>
+
+            <!-- MOVEMENTS-->
+            <div class="movements">
+                <div class="movements_row">
+                    <div class="movements_type movements_type_deposit">
+                        2 deposit
+                    </div>
+                    <div class="movements_date">3 days ago</div>
+                    <div class="movements_value">4000€</div>
+                </div>
+                <div class="movements_row">
+                    <div class="movements_type movements_type_withdrawal">
+                        1 withdrawal
+                    </div>
+                    <div class="movements_date">24/01/2037</div>
+                    <div class="movements_value">-378€</div>
+                </div>
+            </div>
+
+            <!-- SUMMARY -->
+            <div class="summary">
+                <p class="summary_label">In</p>
+                <p class="summary_value summary_value_in">0000€</p>
+                <p class="summary_label">Out</p>
+                <p class="summary_value summary_value_out">0000€</p>
+                <p class="summary_label">Interest</p>
+                <p class="summary_value summary_value_interest">0000€</p>
+                <button class="btn_sort">&downarrow; SORT</button>
+            </div>
+
+            <!-- OPERATION: TRANSFERS -->
+            <div class="operation operation_transfer">
+                <h2>Transfer money</h2>
+                <form class="form form_transfer">
+                    <input type="text" class="form_input form_input_to" />
+                    <input type="text" class="form_input form_input_amount" />
+                    <button class="form_btn form_btn_transfer">&rarr;</button>
+                    <label class="form_label">Transfer to</label>
+                    <label class="form_label">Amount</label>
+                </form>
+            </div>
+
+            <!-- OPERATION: LOAN -->
+            <div class="operation operation_loan">
+                <h2>Request loan</h2>
+                <form class="form form_loan">
+                    <input
+                        type="text"
+                        class="form_input form_input_loan_amount"
+                    />
+                    <button class="form_btn form_btn_loan">&rarr;</button>
+                    <label class="form_label form_label_loan">Amount</label>
+                </form>
+            </div>
+
+            <!-- OPERATION: CLOSE -->
+            <div class="operation operation_close">
+                <h2>Close account</h2>
+                <form class="form form_close">
+                    <input type="text" class="form_input form_input_user" />
+                    <input type="password" class="form_input form_input_Pin" />
+                    <button class="form_btn form_btn_close">&rarr;</button>
+                    <label class="form_label">Confirm user</label>
+                    <label class="form_label">Confirm PIN</label>
+                </form>
+            </div>
+
+            <!-- LOGOUT TIMER -->
+            <p class="logout_timer">
+                You will be logged out in <span class="timer">05:00</span>
+            </p>
+        </main>
+        <!-- <footer>&copy; Developed by SAURAV GHOSH.</footer> -->
+
+        <script src="script.js"></script>
+    </body>
+</html>
